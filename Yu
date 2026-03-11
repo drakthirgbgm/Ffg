@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Perguntas</title>
+</head>
+
+<body style="background:black;color:white;text-align:center;font-size:25px">
+
+<h1>Responda algumas perguntas</h1>
+
+<button onclick="perguntar()">Começar</button>
+
+<script>
+
+function perguntar(){
+
+let nome = prompt("Digite seu nome:")
+let resposta = prompt("Olá " + nome + " tudo bem? (sim/nao)")
+
+if(resposta == "sim"){
+alert("foda-se :)")
+}
+else if(resposta == "nao"){
+alert("foda-se")
+}
+else{
+alert("resposta inválida")
+}
+
+let idade = prompt("Digite sua idade")
+
+if(idade < 16){
+alert("você não pode votar")
+}
+else if(idade < 18){
+alert("voto opcional")
+}
+else{
+alert("voto obrigatório")
+}
+
+}
+
+</script>
+
+</body>
+</html>
